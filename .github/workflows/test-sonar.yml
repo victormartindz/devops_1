@@ -19,7 +19,7 @@ jobs:
         run: >
             mvn -B verify -DskipTests sonar:sonar
             -Dsonar.projectKey=devops_1
-            -Dsonar.organization=vmartindiaz
+            -Dsonar.organization=victormartindz
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.login=$SONAR_TOKEN
         env:
