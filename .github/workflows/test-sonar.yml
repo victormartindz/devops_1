@@ -17,7 +17,7 @@ jobs:
       - name: Sonar
         if: success()
         run: >
-          mvn -B verify -DskipTests sonar:sonar
+          mvn -B sonar:sonar
             -Dsonar.projectKey=devops_1
             -Dsonar.organization=victormartindz
             -Dsonar.host.url=https://sonarcloud.io
