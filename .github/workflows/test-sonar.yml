@@ -14,3 +14,14 @@ jobs:
           java-version: 17
       - name: Unit & Integration Tests
         run: mvn -B verify # -B: --batch-mode
+    name: Sonar
+        if: success()
+        run: >
+            mvn -B verify -DskipTests sonar:sonar
+            -Dsonar.projectKey=devops_1
+            -Dsonar.organization=vmartindiaz
+            -Dsonar.host.url=https://sonarcloud.io
+            -Dsonar.login=$SONAR_TOKEN
+        env:
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+       
