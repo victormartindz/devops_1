@@ -13,7 +13,7 @@
     </parent>
 
     <artifactId>devops_1</artifactId>
-    <groupId>es.upm.miw</groupId>
+    <groupId>devops_1</groupId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
